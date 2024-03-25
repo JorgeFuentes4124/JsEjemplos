@@ -103,8 +103,23 @@ function ejercicio5(){
   }
 console.log("El factorial de "+ factor +" es: "+producto);
 
+}
 
+function ejercicio6(numero){
 
+if(numero % 2 == 0){
+
+return "El numero 26 es par"
+}
+
+else{
+return "El numero 33 es impar"
 }
 
 
+
+
+
+
+
+}
