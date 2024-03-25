@@ -89,5 +89,22 @@ console.log("La letra de tu DNI es: "+ letra);
 else{
 console.log("Es incorrecto")
 }
+
+
 }
+
+function ejercicio5(){
+ 
+  let factor = prompt("ingrese un numero para calcular el factorial");
+
+  let producto = 1
+  for (let i= 1; i <= factor; i++){
+     producto = producto *i;
+  }
+console.log("El factorial de "+ factor +" es: "+producto);
+
+
+
+}
+
 
