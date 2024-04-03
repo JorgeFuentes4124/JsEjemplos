@@ -107,26 +107,30 @@ function ejercicio5(){
 
 }
 
-function ejercicio6(numero){
+function ejercicio6(){
 
-if(numero % 2 == 0){
+  let num = prompt("Ingrese un munero para evaluar");
 
-return "El numero 26 es par"
+  let result = parImp(num);
+
+  console.log(result);
+
 }
 
-else{
-return "El numero 33 es impar"
-}
-
-
-
-
-
-
-
+function parImp(numero) {
+  if (numero == 0) {
+    return "El valor ingresado es incorrecto";
+  }else if(numero % 2 == 0){
+    return "El numero "+numero+" es par";
+    }
+    
+    else{
+    return "El numero  "+numero+" es impar";
+    }
 }
 
 function ejercicio7(){
+  
 
 
 
