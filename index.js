@@ -101,7 +101,9 @@ function ejercicio5(){
   for (let i= 1; i <= factor; i++){
      producto = producto *i;
   }
-console.log("El factorial de "+ factor +" es: "+producto);
+
+  console.log("El factorial de "+ factor +" es: "+producto);
+
 
 }
 
@@ -115,6 +117,19 @@ return "El numero 26 es par"
 else{
 return "El numero 33 es impar"
 }
+
+
+
+
+
+
+
+}
+
+function ejercicio7(){
+
+
+
 
 
 
