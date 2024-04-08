@@ -131,25 +131,32 @@ function parImp(numero) {
 
 function ejercicio7(){
 
-  let letra;
-  letra = prompt("Ingresa una letra:")
-  
-  if( letra > 'a' && letra < 'z')
-  
-  console.log("Minuscula");
-  
-  else{
-  console.log("Mayuscula");
-  
-  }
+  let letra = prompt("Ingresa una letra:");
 
+let result = caramaymi(letra);
 
+console.log(result);
 }
 
+function caramaymi(txt) {
+let may = 0;
+let min = 0;
 
+for (let i = 0; i < txt.length; i++) {
 
+if (txt.charAt(i) === txt.charAt(i).toUpperCase()) {
+  may++;
+} else if (txt.charAt(i) === txt.charAt(i).toLowerCase()) {
+  min++;
+}
+}
 
+if (may == 0) {
+  return "son todas minusculas";
+} else if (min == 0) {
+  return "son todas mayusculas";
+}else {
+return "son mayusculas y munusculas";
+}
 
-
-
-
+}
