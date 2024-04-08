@@ -131,17 +131,25 @@ function parImp(numero) {
 
 function ejercicio7(){
 
-
-
+  let letra;
+  letra = prompt("Ingresa una letra:")
   
-
-
-
-
-
-
-
-
+  if( letra > 'a' && letra < 'z')
+  
+  console.log("Minuscula");
+  
+  else{
+  console.log("Mayuscula");
+  
+  }
 
 
 }
+
+
+
+
+
+
+
+
