@@ -130,6 +130,8 @@ function parImp(numero) {
 }
 
 function ejercicio7(){
+
+
   
 
 
