@@ -172,25 +172,37 @@ console.log(date);
 
 function palabra(texto){
 
-  function esPalindromo(texto) {
+  function Palindromo(texto) {
     let textoProcesado = texto.toLowerCase().replace(/[\W_]/g, '');
     return textoProcesado === textoProcesado.split('').reverse().join('');
   }
 
-if (esPalindromo(texto)) {
+if (Palindromo(texto)) {
 console.log("El texto es un palíndromo.");
 } else {
     console.log("El texto no es un palíndromo.");
 }
 }
 
-function ejercicio10(){
+function lanzamientoDados() {
+  let dado1 = Math.floor(Math.random() * 6) + 1; 
+  let dado2 = Math.floor(Math.random() * 6) + 1;
+  return dado1 + dado2; 
+}
 
+function simularLanzamientos() {
+  let resultados = Array(13).fill(0);
+  for (let i = 0; i < 36000; i++) { 
+    let suma = lanzamientoDados(); 
+    resultados[suma]++;
+  return resultados.slice(2);
+}
 
+let resultadosSimulacion = simularLanzamientos();
 
-
-
-
+console.log("Número de apariciones de cada suma:");
+for (let i = 2; i <= 12; i++) {
+  console.log("Suma " + i + ": " + resultadosSimulacion[i - 2] + " veces");
 }
 
 
@@ -198,3 +210,7 @@ function ejercicio10(){
 
 
 
+
+
+
+}
