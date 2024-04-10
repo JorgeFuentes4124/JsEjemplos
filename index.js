@@ -159,4 +159,31 @@ if (may == 0) {
 return "son mayusculas y munusculas";
 }
 
+
+}
+
+function ejercicio8(){
+
+let result = prompt("Ingresa una cadena de texto");
+let date = palabra(result);
+
+console.log(date);
+
+}
+function palabra(texto){
+var textoLimpio = texto.replace (/ /g, '').toLoweCase();
+var textoInvertido = textoLimpio.split('').reverse().join('');
+
+if(textoLimpio === textoInvertido){
+
+ return "Es polidromo";
+}else{
+return 'No es polindromo';
+
+}
+
+
+
+
+
 }
