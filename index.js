@@ -166,19 +166,30 @@ function ejercicio8(){
 
 let result = prompt("Ingresa una cadena de texto");
 let date = palabra(result);
-
 console.log(date);
 
 }
+
 function palabra(texto){
-var textoLimpio = texto.replace (/ /g, '').toLoweCase();
-var textoInvertido = textoLimpio.split('').reverse().join('');
 
-if(textoLimpio === textoInvertido){
+  function esPalindromo(texto) {
+    let textoProcesado = texto.toLowerCase().replace(/[\W_]/g, '');
+    return textoProcesado === textoProcesado.split('').reverse().join('');
+  }
 
- return "Es polidromo";
-}else{
-return 'No es polindromo';
+if (esPalindromo(texto)) {
+console.log("El texto es un palíndromo.");
+} else {
+    console.log("El texto no es un palíndromo.");
+}
+}
+
+function ejercicio10(){
+
+
+
+
+
 
 }
 
@@ -186,4 +197,4 @@ return 'No es polindromo';
 
 
 
-}
+
