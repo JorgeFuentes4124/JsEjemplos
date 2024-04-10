@@ -131,7 +131,7 @@ function parImp(numero) {
 
 function ejercicio7(){
 
-  let letra = prompt("Ingresa una letra:");
+  let letra = prompt("Ingresa una letra");
 
 let result = caramaymi(letra);
 
